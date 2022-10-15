@@ -24,7 +24,7 @@ int AmountNumbers(char[] array)
     return sum;
 }
 
-// Метод создания и заполнения нового массива без цифр
+// 3. Метод создания и заполнения нового массива без цифр
 
 char[] FinalMethod(char[] symbols)
 {
