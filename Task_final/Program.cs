@@ -24,4 +24,21 @@ int AmountNumbers(char[] array)
     return sum;
 }
 
+// Метод создания и заполнения нового массива без цифр
 
+char[] FinalMethod(char[] symbols)
+{
+    int count = symbols.Length - AmountNumbers(symbols);
+    char[] newArray = new char[count];
+    int pos = 0;
+    int size = symbols.Length;
+    for (int i = 0; i < size; i++)
+    {
+        if (symbols[i] > '9')
+        {
+            newArray[pos] = symbols[i];
+            pos++;
+        }
+    }
+    return newArray;
+}
