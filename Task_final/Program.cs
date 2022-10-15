@@ -42,3 +42,8 @@ char[] FinalMethod(char[] symbols)
     }
     return newArray;
 }
+
+char[] result = FinalMethod(symbols);
+
+Console.WriteLine("Новый массив без цифр: ");
+Console.WriteLine(result);
