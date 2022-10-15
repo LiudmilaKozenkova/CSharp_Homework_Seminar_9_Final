@@ -9,3 +9,19 @@ Console.WriteLine("Введите нескольких символов, в т.�
 string line = Console.ReadLine();
 char[] symbols = line.ToCharArray();
 // Console.WriteLine(symbols);
+
+// 2. Находим количество цифр в заданном пользователем массиве
+int AmountNumbers(char[] array)
+{
+    int sum = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] >= '0' && array[i] <= '0')
+        {
+            sum = sum + 1;
+        }
+    }
+    return sum;
+}
+
+
